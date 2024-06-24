@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 const webhookSiteURL =
   "https://webhook.site/19a88a6c-7b96-476f-937c-57d97995eb9d";
-const specificGroupId = "120363287794903364@g.us";
+const specificGroupId = "120363178722260639@g.us";
 
 app.post("/webhook", (req, res) => {
   const payload = req.body;
@@ -45,3 +45,6 @@ app.post("/webhook", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// https://e206-197-251-240-245.ngrok-free.app/webhook
+// https://webhook-scripts.onrender.com/webhook
